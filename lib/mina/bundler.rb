@@ -22,7 +22,7 @@ set_default :bundle_path, './vendor/bundle'
 # ### bundle_options
 # Sets the options for installing gems via Bundler.
 
-set_default :bundle_options, lambda { %{--without development:test --path "#{bundle_path}" --binstubs bin/ --deployment} }
+set_default :bundle_options, lambda { %{--without development:test --path "#{bundle_path}" --deployment} }
 
 # ## Deploy tasks
 # These tasks are meant to be invoked inside deploy scripts, not invoked on
